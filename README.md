@@ -18,7 +18,7 @@
 
 ---
 ## 🔥 News 
-- **[2026/03]** The [Project Page](https://zijiny.github.io/gvcot/) is now live. Code and dataset will be released soon.
+- **[2026/03]** The [Project Page](https://zijiny.github.io/GVCoT/) is now live. Code and dataset will be released soon.
 
 ## 📌 TODO
 - [x] Release project page.
