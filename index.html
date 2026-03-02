@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generative Visual Chain-of-Thought for Image Editing</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<style>
+  .section.hero {
+    margin-bottom: 0px; 
+  }
+  .hero {
+    margin-bottom: -80px; 
+  }
+  .hero2 {
+    margin-bottom: -200px; 
+    margin-top: 100px; 
+  }
+  .content1 {
+      text-align: left;
+      margin-bottom: 80px; 
+  }
+  .image {
+    max-width: 450px; 
+    max-height: 450px; 
+  }
+</style>
+
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+      </div>
+      <div class="container has-text-centered">
+        <h1 class="title is-1 publication-title">
+          Generative Visual Chain-of-Thought for Image Editing
+        </h1>
+        <div class="is-size-5 publication-authors">
+          Zijin Yin<sup>1,2†</sup>, Tiankai Hang<sup>2</sup>, Yiji Cheng<sup>2</sup>, Shiyi Zhang<sup>2</sup>, Runze He<sup>2</sup>, Yu Xu<sup>2</sup>
+        </div>
+        <div class="is-size-5 publication-authors">
+          Chunyu Wang<sup>2‡</sup>, Bing Li<sup>3</sup>, Zheng Chang<sup>1</sup>, Kongming Liang<sup>1§</sup>, Qinglin Lu<sup>2</sup>, Zhanyu Ma<sup>1</sup>
+        </div>
+
+        <div class="is-size-5 publication-authors">
+          <span class="author-block" style="margin-right: 15px;"><sup>1</sup>Beijing University of Posts and Telecommunications </span>
+          <span class="author-block" style="margin-right: 15px;"><sup>2</sup>Tencent Hunyuan</span>
+          <span class="author-block" style="margin-right: 15px;"><sup>3</sup>King Abdullah University of Science and Technology</span>
+          <br>
+          <span class="author-block" style="margin-right: 15px;"><sup>†</sup>Work done during internship at Tencent Hunyuan</span>
+          <span class="author-block" style="margin-right: 15px;"><sup>‡</sup>Project leader</span>
+          <span class="author-block"><sup>§</sup>Corresponding author</span>
+        </div>
+
+        <div class="column has-text-centered">
+          <div class="publication-links">
+
+            <span class="link-block">
+              <a href="#" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"> <i class="fas fa-file-pdf"></i></span>
+                <span>Paper</span>
+              </a>
+            </span>
+
+            <span class="link-block">
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <img src="static/slick/arxiv.png" alt="ArXiv" style="height: 1em; width: auto;">
+                  <span>  ArXiv</span>
+                </a>
+            </span>
+                
+            <span class="link-block">
+              <a href="#" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>GitHub</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero"></section>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <div class="content has-text-justified">
+          <img src="static/images/teaser.png" />
+        </div>
+        <p class="content has-text-justified">
+          <b>Generative Visual Chain-of-Thought (GVCoT).</b> A comparison of three reasoning paradigms: (a) <b>Text CoT</b>, which reasons purely within the text space; (b) <b>Visual CoT (with Tools)</b>, which leverages external tools to highlight target regions; and (c) <b>Our GVCoT</b>, which performs native visual reasoning via a generative diffusion process within a unified space. 
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero"></section>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+      <div class="column">
+        <h2 class="title is-3">Abstract</h2>
+        
+        <p class="content has-text-justified">
+            Existing image editing methods struggle to perceive where to edit, especially under complex scenes and nuanced spatial instructions. To address this issue, we propose <b>Generative Visual Chain-of-Thought (GVCoT)</b>, a unified framework that performs native visual reasoning by first generating spatial cues to localize the target region and then executing the edit. Unlike prior text-only CoT or tool-dependent visual CoT paradigms, GVCoT jointly optimizes visual tokens generated during the reasoning and editing phases in an end-to-end manner. This way fosters the emergence of innate spatial reasoning ability and enables more effective utilization of visual-domain cues. The main challenge of training GCVoT lies in the scarcity of large-scale editing data with precise edit region annotations; to this end, we construct <b>GVCoT-Edit-Instruct</b>, a dataset of 1.8M high-quality samples spanning 19 tasks. We adopt a progressive training strategy: supervised fine-tuning to build foundational localization ability in reasoning trace before final editing, followed by reinforcement learning to further improve reasoning and editing quality. Finally, we introduce <b>SREdit-Bench</b>, a new benchmark designed to comprehensively stress-test models under sophisticated scenes and fine-grained referring expressions. Experiments demonstrate that GVCoT consistently outperforms state-of-the-art models on SREdit-Bench and ImgEdit. 
+        </p>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero"></section>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Overview</h2>
+        <p class="content has-text-justified">
+          <b>GVCoT</b> is a novel framework that enables a unified model to generate visual spatial cues as intermediate reasoning steps during image editing. Specifically, the process begins by identifying the editing region by drawing masks onto the input image, which corresponds to the visual thought, followed by the image editing step. By directly supervising the visual tokens generated during the reasoning process with a diffusion loss, GVCoT integrates reasoning and editing into a unified end-to-end learning framework, thereby facilitating a more stable and effective emergence of intrinsic visual reasoning ability.
+        </p>
+        
+        <p class="content has-text-justified">
+          We adopt a progressive training recipe that combines supervised fine-tuning (SFT) and reinforcement learning (RL). The first phase focuses on equipping the model with foundational capabilities of drawing masks onto original images and producing structured visual reasoning chains before the image editing process. The second phase boosts both intermediate localization accuracy and final editing fidelity using Group Relative Policy Optimization (GRPO).
+        </p>
+
+        <div class="content has-text-justified">
+          <img src="static/images/method.png" />
+        </div>
+        <p class="content has-text-justified">
+          Supervised Fine-Tuning training recipe. <b><i>Stage 1</i></b>: Multi-Task Visual Manipulation, where the model's generation expert is trained in a multi-task setup to inject the newly masking skill. <b><i>Stage 2</i></b>: Visual Reason-aided Editing, where the entire model is trained to generate a faithful and interpretable visual reasoning image and then an edited image within a single sequence.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero"></section>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Dataset</h2>
+        <p class="content has-text-justified">
+          To overcome the scarcity of image editing datasets with accurate edit region annotations, we develop a scalable multi-stage pipeline that automatically generates high-quality bounding boxes and segmentation masks for edited regions across diverse editing tasks. We utilize this pipeline to construct <b>GVCoT-Edit-Instruct</b>, a large-scale dataset containing 1.8 million high-quality training samples spanning 19 tasks.
+        </p>
+        <div class="content has-text-justified">
+          <img src="static/images/dataset.png" />
+        </div>
+        <p class="content has-text-justified">
+          The pipeline consists of three main steps: <b>Edit Image Pair Creation</b>, where we begin by constructing the source images, instructions, and edited images; <b>Edit Region Mining</b>, where Qwen2.5-VL predicts bounding box coordinates for the intended edit regions; and <b>Edit Region Mask Generation</b>, where we generate a precise mask for each mined edit region.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero"></section>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Benchmark: SREdit-Bench</h2>
+        <p class="content has-text-justified">
+          Existing benchmarks under-represent spatially complex editing scenarios, such as multiple similar editable entities, non-object-salient scenes, and tasks demanding fine-grained object referral. To fill this gap, we introduce <b>SREdit-Bench</b>, a new benchmark comprising 590 carefully curated samples focused on evaluating models' true spatial reasoning ability under complex editing scenarios.
+        </p>
+        <div class="content has-text-justified">
+          <img src="static/images/benchmark.png" alt="SREdit-Bench Illustration" />
+        </div>
+        <p class="content has-text-justified">
+          <b>Illustration of the SREdit-Bench.</b> <i>Left:</i> We provide challenging scenarios featuring complex scenes and fine-grained referring expressions, including spatial-based, property-based, and knowledge-based instructions. <i>Right:</i> SREdit-Bench concentrates on more sophisticated scenes with higher object counts compared to existing benchmarks. We use GPT-4.1 as an automated judge to evaluate Semantic Consistency (SC) and Perceptual Quality (PQ).
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero"></section>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Qualitative Results</h2>
+        
+        <div class="content has-text-justified">
+          <img src="static/images/result.png" />
+        </div>
+        <p class="content has-text-justified">
+          Qualitative comparison in SREdit-Bench. Our method demonstrates superior spatial reasoning and instruction adherence compared to existing open-source models, especially when handling complex, multi-object editing tasks.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-6">
+        <div class="content">
+          <p>
+             The source code of this webpage is based on the <a href="https://github.com/nerfies/nerfies.github.io/"> Nerfies</a> project webpage.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="./static/slick/slick.min.js"></script>
+</body>
+</html>
