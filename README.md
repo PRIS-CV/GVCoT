@@ -6,8 +6,7 @@
   <a href="#"><img src="https://img.shields.io/static/v1?label=Dataset&message=SREdit-Bench&&color=yellow"></a> &ensp;
 </div>
 
-> ## Generative Visual Chain-of-Thought for Image Editing
->
+> 
 > Zijin Yin<sup>1,2,†</sup>, Tiankai Hang<sup>2</sup>, Yiji Cheng<sup>2</sup>, Shiyi Zhang<sup>2</sup>, Runze He<sup>2</sup>, Yu Xu<sup>2</sup>, Chunyu Wang<sup>2,‡</sup>, Bing Li<sup>3</sup>, Zheng Chang<sup>1</sup>, Kongming Liang<sup>1,§</sup>, Qinglin Lu<sup>2</sup>, Zhanyu Ma<sup>1</sup>
 > 
 > <sup>1</sup>Beijing University of Posts and Telecommunications, <sup>2</sup>Tencent Hunyuan, <sup>3</sup>King Abdullah University of Science and Technology
