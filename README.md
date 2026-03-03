@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://pris-cv.github.io/GVCoT/"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=Github&color=blue&logo=github-pages"></a> &ensp;
-  <a href="#"><img src="https://img.shields.io/static/v1?label=Paper&message=Arxiv:GVCoT&color=red&logo=arxiv"></a> &ensp;
+  <a href="https://arxiv.org/abs/2603.01893"><img src="https://img.shields.io/static/v1?label=Paper&message=Arxiv:GVCoT&color=red&logo=arxiv"></a> &ensp;
   <a href="#"><img src="https://img.shields.io/static/v1?label=Dataset&message=SREdit-Bench&&color=yellow"></a> &ensp;
 </div>
 
