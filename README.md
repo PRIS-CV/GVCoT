@@ -3,7 +3,7 @@
 <div align="center">
   <a href="https://pris-cv.github.io/GVCoT/"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=Github&color=blue&logo=github-pages"></a> &ensp;
   <a href="https://arxiv.org/abs/2603.01893"><img src="https://img.shields.io/static/v1?label=Paper&message=Arxiv:GVCoT&color=red&logo=arxiv"></a> &ensp;
-  <a href="#"><img src="https://img.shields.io/static/v1?label=Dataset&message=SREdit-Bench&&color=yellow"></a> &ensp;
+  <a href="https://huggingface.co/datasets/zjYinnnn/SREdit-Bench"><img src="https://img.shields.io/static/v1?label=Dataset&message=SREdit-Bench&&color=yellow"></a> &ensp;
 </div>
 
 > 
@@ -21,9 +21,10 @@
 
 ## 📌 TODO
 - [x] Release project page.
-- [ ] Release paper on arXiv.
-- [ ] Release GVCoT-Edit-Instruct dataset.
+- [x] Release paper on arXiv.
+- [x] Release SREdit-Bench dataset.
 - [ ] Release inference code and model weights.
+- [ ] Release SFT and RL train code.
 
 ## 📖 BibTeX
 ```bibtex
